@@ -1,10 +1,12 @@
-import Header from "./header";
+import { Header } from "./header";
 import { GlobalStyle } from "./globalStyle";
+import { Container } from "./Container";
 
-function App() {
-  <GlobalStyle>
-    <Header />;
-  </GlobalStyle>;
-}
+const App = () => {
+  <Container>
+    <GlobalStyle />
+    <Header />
+  </Container>;
+};
 
 export default App;

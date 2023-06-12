@@ -1,4 +1,6 @@
-export const Header = () => {
+import React from "react";
+
+export const Header = () => (
   <div>
     <img src="src/oskar.jpg" alt="Oskar Siry" />
     <div>
@@ -10,4 +12,4 @@ export const Header = () => {
       </p>
     </div>
   </div>
-};
+);

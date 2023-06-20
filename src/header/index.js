@@ -1,15 +1,32 @@
 import React from "react";
+import {
+  Button,
+  ButtonText,
+  Caption,
+  Description,
+  Name,
+  Photo,
+  Wrapper,
+} from "./styled";
+import { ReactComponent as Message } from "../Message.svg";
+import { Vector } from "../Vector";
 
 export const Header = () => (
-  <div>
-    <img src="src/oskar.jpg" alt="Oskar Siry" />
+  <Wrapper>
+    <Photo src={require(`../oskar.jpg`)} alt="Oskar Siry" />
     <div>
-      <caption>This is</caption>
-      <h1>Oskar Siry</h1>
-      <p>
-        👨🏻Im a passionate Frontend Developer in love with React, currently
-        looking for new job opportunities.
-      </p>
+      <Vector />
+      <Caption>This is</Caption>
+      <Name>Oskar Siry</Name>
+      <Description>
+        👨🏻Im a passionate Frontend Developer in love with React,
+        <br />
+        currently looking for new job opportunities.
+      </Description>
+      <Button>
+        <Message />
+        <ButtonText>Hire Me</ButtonText>
+      </Button>
     </div>
-  </div>
+  </Wrapper>
 );

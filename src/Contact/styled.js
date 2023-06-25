@@ -12,7 +12,7 @@ export const Caption = styled.p`
   font-size: 12px;
   line-height: 130%;
   text-transform: uppercase;
-  color: #6e7e91;
+  color: ${(props) => props.theme.color.text};
   white-space: nowrap;
 `;
 export const Post = styled.a`
@@ -21,11 +21,11 @@ export const Post = styled.a`
   font-size: 32px;
   line-height: 39px;
   letter-spacing: 0.05em;
-  color: black;
+  color: ${(props) => props.theme.mail.color};
   text-decoration: none;
 
   &:hover {
-    color: #0366d6;
+    color: ${(props) => props.theme.mail.hover};
   }
 `;
 
@@ -37,13 +37,17 @@ export const Text = styled.p`
   line-height: 140%;
   letter-spacing: 0.05em;
   margin-bottom: 56px;
+  color: ${(props) => props.theme.color.header};
 `;
 
 export const Link = styled.a`
   margin-right: 24px;
+  path {
+    fill: ${(props) => props.theme.socialMedia.color};
+  }
   &:focus {
     path {
-      fill: #0366d6;
+      fill: ${(props) => props.theme.socialMedia.focus};
     }
   }
 `;

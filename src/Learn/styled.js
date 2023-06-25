@@ -4,9 +4,8 @@ export const Wrapper = styled.div`
   margin-top: 104px;
   padding: 32px 32px 24px 32px;
   max-width: 1215px;
-  background: #ffffff;
-  box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
-    0px 16px 58px rgba(9, 10, 51, 0.03);
+  background: ${(props) => props.theme.box.color};
+  box-shadow: ${(props) => props.theme.box.shadow};
   border-radius: 4px;
 `;
 
@@ -17,7 +16,7 @@ export const Title = styled.h2`
   line-height: 36px;
   margin: 0;
   letter-spacing: 0.05em;
-  color: #252525;
+  color: ${(props) => props.theme.color.header};
   padding-bottom: 18px;
   border-bottom: 1px solid #e5e5e5;
 `;
@@ -38,7 +37,7 @@ export const ListItem = styled.li`
   font-size: 18px;
   line-height: 140%;
   letter-spacing: 0.05em;
-  color: #6e7e91;
+  color: ${(props) => props.theme.color.text};
 
   &::before {
     content: "•";

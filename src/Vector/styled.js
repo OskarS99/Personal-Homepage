@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { ReactComponent as Button } from "../SVG/ToggleLight .svg";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -7,10 +8,11 @@ export const Wrapper = styled.div`
   align-items: center;
   padding: 0px;
   gap: 12px;
-  width: 159px;
-  height: 26px;
   position: absolute;
-  right: 0;
+  width: 159px;
+  left: 1411px;
+  top: 119px;
+  height: 26px;
 `;
 
 export const Caption = styled.p`
@@ -22,4 +24,26 @@ export const Caption = styled.p`
   font-size: 12px;
   line-height: 130%;
   text-transform: uppercase;
+`;
+
+export const SwitchButton = styled(Button)`
+  #Vector {
+    position: relative;
+  }
+  &:active {
+    #toggle {
+      position: absolute;
+      overflow: hidden;
+      cursor: pointer;
+      animation: move 1s;
+    }
+  }
+  @keyframes move {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
 `;

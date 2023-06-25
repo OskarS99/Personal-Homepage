@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { ReactComponent as IconGit } from "../IconGit.svg";
-import { ReactComponent as Danger } from "../Danger.svg";
-import { ReactComponent as Spinner } from "../icon-spinner.svg";
+import { ReactComponent as IconGit } from "../SVG/IconGit.svg";
+import { ReactComponent as Danger } from "../SVG/Danger.svg";
+import { ReactComponent as Spinner } from "../SVG/icon-spinner.svg";
 
 export const Wrapper = styled.section`
   max-width: 1215px;
@@ -9,11 +9,15 @@ export const Wrapper = styled.section`
 `;
 
 export const StyledIconGit = styled(IconGit)`
+  path {
+    fill: ${(props) => props.theme.color.IconGit};
+  }
   display: block;
   margin: 0 auto;
 `;
 
 export const Header = styled.h2`
+  color: ${(props) => props.theme.color.header};
   font-style: normal;
   font-weight: 900;
   font-size: 30px;
@@ -24,6 +28,7 @@ export const Header = styled.h2`
 `;
 
 export const Text = styled.p`
+  color: ${(props) => props.theme.color.header};
   margin-top: 8px;
   font-style: normal;
   font-weight: 400;
@@ -41,6 +46,9 @@ export const Body = styled.div`
 `;
 
 export const StyledIconDanger = styled(Danger)`
+  path {
+    fill: ${(props) => props.theme.color.header};
+  }
   display: block;
   margin: 0 auto;
   margin-top: 95.5px;
@@ -54,6 +62,7 @@ export const ErrorHeader = styled.h3`
   text-align: center;
   letter-spacing: 0.05em;
   margin-top: 23.16px;
+  color: ${(props) => props.theme.color.header};
 `;
 
 export const ErrorDescription = styled.p`
@@ -64,13 +73,14 @@ export const ErrorDescription = styled.p`
   text-align: center;
   letter-spacing: 0.05em;
   margin: 32px auto;
+  color: ${(props) => props.theme.color.header};
 `;
 
 export const Link = styled.a`
   width: 168px;
   padding: 12px 16px;
   gap: 16px;
-  background: #0366d6;
+  background: ${(props) => props.theme.button.color};
   border: 1px solid rgba(209, 213, 218, 0.1);
   border-radius: 4px;
   color: white;
@@ -80,8 +90,7 @@ export const Link = styled.a`
   text-align: center;
 
   &:focus {
-    box-shadow: 2px -2px 0px #8cc2ff, -2px 2px 0px #8cc2ff, 2px 2px 0px#8CC2FF,
-      -2px -2px 0px #8cc2ff;
+    box-shadow: ${(props) => props.theme.button.focus};
   }
 `;
 
@@ -93,6 +102,7 @@ export const LoadingDescription = styled.p`
   line-height: 140%;
   text-align: center;
   letter-spacing: 0.05em;
+  color: ${(props) => props.theme.color.header};
 `;
 
 export const StyledIconSpinner = styled(Spinner)`

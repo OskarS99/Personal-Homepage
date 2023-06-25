@@ -2,11 +2,14 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin-top: 119px;
-  max-width: 1089px;
+  margin-right: 350px;
+  max-width: 1216px;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 66px;
 `;
+
+export const Test = styled.div``;
 
 export const Photo = styled.img`
   width: 398px;
@@ -24,7 +27,7 @@ export const Caption = styled.p`
   font-size: 12px;
   line-height: 130%;
   text-transform: uppercase;
-  color: #6e7e91;
+  color: ${(props) => props.theme.color.text};
 `;
 
 export const Name = styled.h1`
@@ -35,7 +38,7 @@ export const Name = styled.h1`
   font-size: 38px;
   line-height: 46px;
   letter-spacing: 0.05em;
-  color: #252525;
+  color: ${(props) => props.theme.color.header};
 `;
 export const Description = styled.p`
   width: 633px;
@@ -45,7 +48,7 @@ export const Description = styled.p`
   font-size: 20px;
   line-height: 140%;
   letter-spacing: 0.05em;
-  color: #6e7e91;
+  color: ${(props) => props.theme.color.text};
 `;
 
 export const Button = styled.button`
@@ -57,17 +60,16 @@ export const Button = styled.button`
   gap: 16px;
   width: 154px;
   height: 49px;
-  background: #0366d6;
-  border: 1px solid rgba(209, 213, 218, 0.3);
+  background: ${(props) => props.theme.button.color};
+  border: ${(props) => props.theme.button.border};
   border-radius: 4px;
 
   &:focus {
-    box-shadow: 2px -2px 0px #8cc2ff, -2px 2px 0px #8cc2ff, 2px 2px 0px #8cc2ff,
-      -2px -2px 0px #8cc2ff;
+    box-shadow: ${(props) => props.theme.button.focus};
   }
 
   &:active {
-    border: 1px solid rgba(209, 213, 218, 0.3);
+    box-shadow: ${(props) => props.theme.button.selected};
   }
 `;
 

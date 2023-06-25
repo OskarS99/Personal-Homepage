@@ -6,16 +6,18 @@ import {
   Description,
   Name,
   Photo,
+  Test,
   Wrapper,
 } from "./styled";
-import { ReactComponent as Message } from "../Message.svg";
-import { Vector } from "../Vector";
+import { ReactComponent as Message } from "../SVG/Message.svg";
+import { ThemeButton } from "../Vector";
 
 export const Header = () => (
   <Wrapper>
     <Photo src={require(`../oskar.jpg`)} alt="Oskar Siry" />
-    <div>
-      <Vector />
+
+    <Test>
+      <ThemeButton />
       <Caption>This is</Caption>
       <Name>Oskar Siry</Name>
       <Description>
@@ -27,6 +29,6 @@ export const Header = () => (
         <Message />
         <ButtonText>Hire Me</ButtonText>
       </Button>
-    </div>
+    </Test>
   </Wrapper>
 );

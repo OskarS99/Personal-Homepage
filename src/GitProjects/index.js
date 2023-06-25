@@ -15,23 +15,27 @@ import {
 import { useProjectData } from "./useProjectData";
 
 export const GitProjects = () => {
-  const statusApi = useProjectData();
+  const [reposData] = useProjectData();
 
   return (
     <Wrapper>
       <StyledIconGit />
       <Header>Portfolio</Header>
       <Text>My recent project</Text>
-      <div>
-        {statusApi.status === "loading" ? (
-          <>
+
+      {reposData.includes("loading") ? (
+        <>
+          {" "}
+          <div>
             <LoadingDescription>
               Please wait, projects are being loaded...
             </LoadingDescription>
             <StyledIconSpinner />
-          </>
-        ) : statusApi.status === "error" ? (
-          <>
+          </div>
+        </>
+      ) : reposData.includes("error") ? (
+        <>
+          <div>
             <StyledIconDanger />
             <ErrorHeader>Ooops! Something went wrong... </ErrorHeader>
             <ErrorDescription>
@@ -39,16 +43,13 @@ export const GitProjects = () => {
               You can check them directly on Github.
             </ErrorDescription>
             <Link href="https://github.com/OskarS99">Go to Github</Link>
-          </>
-        ) : (
-          <Body>
-            <Project />
-            <Project />
-            <Project />
-            <Project />
-          </Body>
-        )}
-      </div>
+          </div>
+        </>
+      ) : (
+        <Body>
+          <Project />
+        </Body>
+      )}
     </Wrapper>
   );
 };

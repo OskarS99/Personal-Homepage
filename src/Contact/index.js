@@ -1,8 +1,8 @@
 import { Caption, Link, Post, Text, Wrapper } from "./styled";
-import { ReactComponent as IconGitHub } from "../IconGithub.svg";
-import { ReactComponent as IconFb } from "../IconFb.svg";
-import { ReactComponent as IconLinkedIN } from "../IconLinkedIN.svg";
-import { ReactComponent as IconIg } from "../IconIG.svg";
+import { ReactComponent as IconGitHub } from "../SVG/IconGithub.svg";
+import { ReactComponent as IconFb } from "../SVG/IconFb.svg";
+import { ReactComponent as IconLinkedIN } from "../SVG/IconLinkedIN.svg";
+import { ReactComponent as IconIg } from "../SVG/IconIG.svg";
 
 export const Contact = () => (
   <Wrapper>

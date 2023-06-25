@@ -11,7 +11,7 @@ box-sizing: inherit;
 }
 
 body {
-
-background-color: #e5e5e5;
+background-color: ${(props) => props.theme.color.body};
 }
+
 `;

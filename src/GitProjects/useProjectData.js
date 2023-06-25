@@ -2,10 +2,9 @@ import { useState, useEffect } from "react";
 
 export const useProjectData = () => {
   const projectApi = `https://api.github.com/users/OskarS99/repos`;
-  const [statusApi, setStatusApi] = useState({
-    status: "loading",
-  });
-  const [reposData, setReposData] = useState([]);
+
+  const [reposData, setReposData] = useState(["loading"]);
+
   useEffect(() => {
     const fetchRepos = async () => {
       try {
@@ -15,18 +14,14 @@ export const useProjectData = () => {
         }
 
         const repos = await response.json();
-        setReposData(repos);
-        setStatusApi({
-          status: "succes",
-        });
+
+        setReposData(repos, "success");
       } catch {
-        setStatusApi({
-          status: "error",
-        });
+        setReposData("error");
       }
     };
     setTimeout(fetchRepos, 1000);
   }, []);
 
-  return reposData, statusApi;
+  return [reposData];
 };

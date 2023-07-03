@@ -1,6 +1,8 @@
 import { Project } from "./Project";
 import {
   Body,
+  ButtonLink,
+  Button,
   ErrorDescription,
   ErrorHeader,
   Header,
@@ -42,7 +44,9 @@ export const GitProjects = () => {
               Sorry, failed to load Github projects. <br />
               You can check them directly on Github.
             </ErrorDescription>
-            <Link href="https://github.com/OskarS99">Go to Github</Link>
+            <ButtonLink href="https://github.com/OskarS99">
+              <Button>Go to Github</Button>
+            </ButtonLink>
           </div>
         </>
       ) : (

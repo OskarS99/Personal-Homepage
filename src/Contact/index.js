@@ -16,13 +16,13 @@ export const Contact = () => (
     <Link href="https://github.com/OskarS99">
       <IconGitHub />
     </Link>
-    <Link>
+    <Link href="https://www.messenger.com/t/100003052069252/">
       <IconFb />
     </Link>
-    <Link>
+    <Link href="https://www.linkedin.com/in/oskar-siry-89743b263/">
       <IconLinkedIN />
     </Link>
-    <Link>
+    <Link href="https://www.instagram.com/oskarro_99/">
       <IconIg />
     </Link>
   </Wrapper>

@@ -4,7 +4,11 @@
 <path id="Vector" d="M13.1765 0.5H34.8235C41.8309 0.5 47.5 6.10278 47.5 13C47.5 19.8972 41.8309 25.5 34.8235 25.5H13.1765C6.16907 25.5 0.5 19.8972 0.5 13C0.5 6.10278 6.16907 0.5 13.1765 0.5Z" fill="white" stroke="#6E7E91"/>
 <path id="Vector_2" d="M34.8236 0.464233H13.1766C6.15932 0.464233 0.470703 6.07666 0.470703 12.9999C0.470703 19.9232 6.15932 25.5357 13.1766 25.5357H34.8236C41.8409 25.5357 47.5295 19.9232 47.5295 12.9999C47.5295 6.07666 41.8409 0.464233 34.8236 0.464233Z" fill="#E5E5E5" stroke="#D1D5DA" stroke-opacity="0.3"/>
 </g>
-<path id="toggle" d="M13 23C18.5228 23 23 18.5228 23 13C23 7.47715 18.5228 3 13 3C7.47715 3 3 7.47715 3 13C3 18.5228 7.47715 23 13 23Z" fill="#6E7E91"/>
+
+<g id="slider" >
+<path id="toggle" begin="move.begin" d="M13 23C18.5228 23 23 18.5228 23 13C23 7.47715 18.5228 3 13 3C7.47715 3 3 7.47715 3 13C3 18.5228 7.47715 23 13 23Z" fill="#6E7E91">
+<animation attributeType="XML" attributeName="transform" from="translateX(0%)" to="translateX(100%)" dur="0.5s" id="move" begin="click" />
+</path>
 <g id="brightness" clip-path="url(#clip1_25_538)">
 <g id="Group">
 <g id="Group_2">
@@ -23,6 +27,10 @@
 </g>
 </g>
 </g>
+
+</g>
+
+
 <defs>
 <clipPath id="clip0_25_538">
 <rect width="48" height="26" fill="white"/>

@@ -18,7 +18,7 @@ export const Title = styled.h2`
   letter-spacing: 0.05em;
   color: ${(props) => props.theme.color.header};
   padding-bottom: 18px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid rgba(209, 213, 218, 0.3);
 `;
 
 export const List = styled.ul`

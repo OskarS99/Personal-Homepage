@@ -73,6 +73,7 @@ export const darkTheme = {
     color: `#FFFFFF`,
     hover: `#0366D6`,
   },
+
   circle: {
     elipse1: `#363636`,
     elipse2: `#2188FF`,

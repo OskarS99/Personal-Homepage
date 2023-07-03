@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   margin-top: 120px;
   max-width: 691px;
+  margin-bottom: 120px;
 `;
 
 export const Caption = styled.p`

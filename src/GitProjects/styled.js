@@ -47,7 +47,7 @@ export const Body = styled.div`
 
 export const StyledIconDanger = styled(Danger)`
   path {
-    fill: ${(props) => props.theme.color.header};
+    stroke: ${(props) => props.theme.color.header};
   }
   display: block;
   margin: 0 auto;
@@ -76,7 +76,14 @@ export const ErrorDescription = styled.p`
   color: ${(props) => props.theme.color.header};
 `;
 
-export const Link = styled.a`
+export const ButtonLink = styled.a`
+  display: block;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+`;
+
+export const Button = styled.button`
   width: 168px;
   padding: 12px 16px;
   gap: 16px;
@@ -84,10 +91,6 @@ export const Link = styled.a`
   border: 1px solid rgba(209, 213, 218, 0.1);
   border-radius: 4px;
   color: white;
-  text-decoration: none;
-  display: block;
-  margin: auto;
-  text-align: center;
 
   &:focus {
     box-shadow: ${(props) => props.theme.button.focus};
@@ -106,6 +109,26 @@ export const LoadingDescription = styled.p`
 `;
 
 export const StyledIconSpinner = styled(Spinner)`
+  #Ellipse1 {
+    stroke: ${(props) => props.theme.circle.elipse1};
+  }
+
+  #Ellipse2 {
+    stroke: ${(props) => props.theme.circle.elipse2};
+    position: relative;
+    animation: rotate 2s linear infinite;
+    transform-origin: center;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
   display: block;
   margin: 0 auto;
   margin-top: 48px;

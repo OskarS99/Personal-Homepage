@@ -3,7 +3,7 @@ import { Caption, Wrapper } from "./styled";
 
 export const Vector = () => (
   <Wrapper>
-    <Caption> Dark mode off</Caption>
+    <Caption> Dark mode off and on</Caption>
     <ToggleLight />
   </Wrapper>
 );

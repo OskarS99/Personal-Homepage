@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Button,
+  ButtonLink,
   ButtonText,
   Caption,
   Description,
@@ -11,12 +12,14 @@ import {
 } from "./styled";
 import { ReactComponent as Message } from "../SVG/Message.svg";
 import { ThemeButton } from "../Vector";
+import { ToggleSwitch } from "../ToggleSwitch";
 
 export const Header = () => (
   <Wrapper>
     <Photo src={require(`../oskar.jpg`)} alt="Oskar Siry" />
 
     <Test>
+      <ToggleSwitch />
       <ThemeButton />
       <Caption>This is</Caption>
       <Name>Oskar Siry</Name>
@@ -25,10 +28,12 @@ export const Header = () => (
         <br />
         currently looking for new job opportunities.
       </Description>
-      <Button>
-        <Message />
-        <ButtonText>Hire Me</ButtonText>
-      </Button>
+      <ButtonLink href="mailto:oskarsiry99@gmail.com">
+        <Button>
+          <Message />
+          <ButtonText>Hire Me</ButtonText>
+        </Button>
+      </ButtonLink>
     </Test>
   </Wrapper>
 );

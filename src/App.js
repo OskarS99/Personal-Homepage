@@ -19,8 +19,7 @@ const App = () => {
     <ThemeProvider theme={theme.theme ? lightTheme : darkTheme}>
       <Container>
         <GlobalStyle />
-
-        <Header />
+<Header />
         <Skillset />
         <Learn />
         <GitProjects />

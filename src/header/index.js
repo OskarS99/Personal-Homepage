@@ -11,15 +11,14 @@ import {
   Wrapper,
 } from "./styled";
 import { ReactComponent as Message } from "../SVG/Message.svg";
-import { ThemeButton } from "../Vector";
-import { ToggleSwitch } from "../ToggleSwitch";
+import { ThemeButton } from "../ThemeButton";
+
 
 export const Header = () => (
   <Wrapper>
     <Photo src={require(`../oskar.jpg`)} alt="Oskar Siry" />
 
     <Test>
-      <ToggleSwitch />
       <ThemeButton />
       <Caption>This is</Caption>
       <Name>Oskar Siry</Name>

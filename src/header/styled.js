@@ -2,14 +2,15 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin-top: 119px;
-  margin-right: 350px;
   max-width: 1216px;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 66px;
 `;
 
-export const Test = styled.div``;
+export const Test = styled.div`
+  position: relative;
+`;
 
 export const Photo = styled.img`
   width: 398px;
@@ -81,4 +82,7 @@ export const ButtonText = styled.p`
   font-size: 20.0584px;
   line-height: 24px;
   color: #ffffff;
+`;
+export const ButtonLink = styled.a`
+  text-decoration: none;
 `;

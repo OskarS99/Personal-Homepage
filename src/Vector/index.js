@@ -12,4 +12,6 @@ export const ThemeButton = () => {
       <Caption>
         Dark mode <span>{theme.theme === true ? "off" : "on"}</span>
       </Caption>
-
+    </Button>
+  );
+};

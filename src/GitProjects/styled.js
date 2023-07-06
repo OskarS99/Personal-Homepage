@@ -6,6 +6,11 @@ import { ReactComponent as Spinner } from "../SVG/icon-spinner.svg";
 export const Wrapper = styled.section`
   max-width: 1215px;
   margin-top: 72px;
+
+  @media (max-width: 767px) {
+    margin-top: 48px;
+    margin-inline: 16px;
+  }
 `;
 
 export const StyledIconGit = styled(IconGit)`

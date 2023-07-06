@@ -9,9 +9,9 @@ export const Contact = () => (
     <Caption>Let’s talk!</Caption>
     <Post href="mailto:oskarsiry99@gmail.com">oskarsiry99@gmail.com</Post>
     <Text>
-      I’m always open to new projects whenever I have the time. If you have
-      <br /> a website, dashboard or mobile app in mind and need some help to
-      <br /> make your ideas come to life, feel free to contact me 🤞
+      I’m always open to new projects whenever I have the time. If you have a
+      website, dashboard or mobile app in mind and need some help to make your
+      ideas come to life, feel free to contact me 🤞
     </Text>
     <Link href="https://github.com/OskarS99">
       <IconGitHub />

@@ -1,24 +1,23 @@
 import styled from "styled-components";
 import { ReactComponent as ToggleLight } from "../SVG/ToggleLight .svg";
 
-
 export const Wrapper = styled.div`
- position: absolute;
+  position: absolute;
   right: 0;
   top: 0;
-  height: 26px;display: flex;
+  height: 26px;
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;  
- gap: 12px;
+  align-items: center;
+  gap: 12px;
 `;
-
 
 export const Button = styled.button`
   border: none;
-  background: none; 
-   padding: 0px;
-  `;
+  background: none;
+  padding: 0px;
+`;
 
 export const Caption = styled.p`
   width: 99px;
@@ -29,6 +28,10 @@ export const Caption = styled.p`
   font-size: 12px;
   line-height: 130%;
   text-transform: uppercase;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 `;
 
 export const Toggle = styled(ToggleLight)`

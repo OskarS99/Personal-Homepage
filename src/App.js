@@ -1,5 +1,4 @@
 import React from "react";
-import { Header } from "./header";
 import { GlobalStyle } from "./globalStyle";
 import Container from "./Container";
 import { Skillset } from "./Skillset";
@@ -7,7 +6,7 @@ import { Learn } from "./Learn";
 import { GitProjects } from "./GitProjects";
 import { Contact } from "./Contact";
 import { ThemeProvider } from "styled-components";
-
+import { Person } from "./Person";
 import { selectTheme } from "./themeSlice";
 import { darkTheme, lightTheme } from "./theme";
 import { useSelector } from "react-redux";
@@ -19,7 +18,7 @@ const App = () => {
     <ThemeProvider theme={theme.theme ? lightTheme : darkTheme}>
       <Container>
         <GlobalStyle />
-<Header />
+        <Person />
         <Skillset />
         <Learn />
         <GitProjects />

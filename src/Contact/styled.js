@@ -4,6 +4,12 @@ export const Wrapper = styled.div`
   margin-top: 120px;
   max-width: 691px;
   margin-bottom: 120px;
+
+  @media (max-width: 767px) {
+    margin-top: 48px;
+    margin-inline: 16px;
+    margin-bottom: 31px;
+  }
 `;
 
 export const Caption = styled.p`

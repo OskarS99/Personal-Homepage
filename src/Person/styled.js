@@ -9,7 +9,10 @@ export const Wrapper = styled.div`
   grid-gap: 66px;
 
   @media (max-width: 767px) {
+    grid-gap: 16px;
     grid-template-columns: 1fr;
+    margin-top: 21px;
+    margin-inline: 16px;
   }
 `;
 
@@ -20,21 +23,24 @@ export const Photo = styled.img`
   border-color: #c4c4c4;
 
   @media (max-width: 767px) {
-    width: 128px;
-    height: 128px;
+    margin-top: 32px;
+    width: 132.67px;
+    height: 132.67px;
   }
 `;
 
 export const Caption = styled.p`
   margin-top: 64px;
-  width: 43px;
-  height: 16px;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 130%;
   text-transform: uppercase;
   color: ${(props) => props.theme.color.text};
+
+  @media (max-width: 767px) {
+    margin-top: 0;
+  }
 `;
 
 export const Name = styled.h1`
@@ -48,14 +54,16 @@ export const Name = styled.h1`
   color: ${(props) => props.theme.color.header};
 `;
 export const Description = styled.p`
-  width: 633px;
-  height: 57px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
   letter-spacing: 0.05em;
   color: ${(props) => props.theme.color.text};
+
+  @media (max-width: 767px) {
+    word-break: break-word;
+  }
 `;
 
 export const Button = styled.button`

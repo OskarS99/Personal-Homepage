@@ -12,17 +12,16 @@ import {
 import { ReactComponent as Message } from "../SVG/Message.svg";
 import { ThemeButton } from "../ThemeButton";
 
-export const Header = () => (
+export const Person = () => (
   <Wrapper>
-    <Photo src={require(`../oskar.jpg`)} alt="Oskar Siry" />
     <ThemeButton />
+    <Photo src={require(`../oskar.jpg`)} alt="Oskar Siry" />
     <div>
       <Caption>This is</Caption>
       <Name>Oskar Siry</Name>
       <Description>
-        👨🏻Im a passionate Frontend Developer in love with React,
-        <br />
-        currently looking for new job opportunities.
+        👨🏻Im a passionate Frontend Developer in love with React, currently
+        looking for new job opportunities.
       </Description>
       <ButtonLink href="mailto:oskarsiry99@gmail.com">
         <Button>

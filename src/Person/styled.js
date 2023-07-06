@@ -10,7 +10,6 @@ export const Wrapper = styled.div`
 
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
-    margin: 0 auto;
   }
 `;
 

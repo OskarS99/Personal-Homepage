@@ -1,15 +1,16 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  position: relative;
   margin-top: 119px;
   max-width: 1216px;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 66px;
-`;
 
-export const Test = styled.div`
-  position: relative;
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Photo = styled.img`

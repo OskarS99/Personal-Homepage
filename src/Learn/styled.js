@@ -7,6 +7,11 @@ export const Wrapper = styled.div`
   background: ${(props) => props.theme.box.color};
   box-shadow: ${(props) => props.theme.box.shadow};
   border-radius: 4px;
+
+  @media (max-width: 767px) {
+    margin-top: 50px;
+    margin-inline: 16px;
+  }
 `;
 
 export const Title = styled.h2`

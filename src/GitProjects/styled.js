@@ -43,6 +43,9 @@ export const Body = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-gap: 32px;
   margin-top: 24px;
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const StyledIconDanger = styled(Danger)`

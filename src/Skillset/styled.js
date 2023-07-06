@@ -7,6 +7,11 @@ export const Box = styled.div`
   padding: 32px 32px 24px 32px;
   box-shadow: ${(props) => props.theme.box.shadow};
   border-radius: 4px;
+
+  @media (max-width: 767px) {
+    margin-top: 48px;
+    margin-inline: 16px;
+  }
 `;
 
 export const Title = styled.h2`

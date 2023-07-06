@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
 
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
+    margin: 0 auto;
   }
 `;
 
@@ -18,6 +19,11 @@ export const Photo = styled.img`
   height: 398px;
   border-radius: 50%;
   border-color: #c4c4c4;
+
+  @media (max-width: 767px) {
+    width: 128px;
+    height: 128px;
+  }
 `;
 
 export const Caption = styled.p`

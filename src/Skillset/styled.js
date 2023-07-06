@@ -30,6 +30,10 @@ export const List = styled.ul`
   margin-top: 32px;
   list-style: none;
   list-style-position: inside;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ListItem = styled.li`

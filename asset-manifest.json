@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.c9dbc6f2.js",
+    "main.js": "/personal-homepage/static/js/main.7fdb4b35.js",
     "static/js/787.162bc9a0.chunk.js": "/personal-homepage/static/js/787.162bc9a0.chunk.js",
     "static/media/oskar.jpg": "/personal-homepage/static/media/oskar.d92f50c41aea283dd1e4.jpg",
+    "static/media/DarkButton.svg": "/personal-homepage/static/media/DarkButton.9e2db4d43beb9e831019eb690919df2f.svg",
     "static/media/ToggleLight .svg": "/personal-homepage/static/media/ToggleLight .6c7f0b1519a3875eb2beb121873236f2.svg",
+    "static/media/LightButton.svg": "/personal-homepage/static/media/LightButton.471109add07aa2687adcdbd0ed63c71e.svg",
     "static/media/IconIG.svg": "/personal-homepage/static/media/IconIG.ac575dc2f80befa7ba993f0a04ba6dda.svg",
-    "static/media/sun.svg": "/personal-homepage/static/media/sun.265ed56c7ce199415001d346ff2142d5.svg",
     "static/media/IconGithub.svg": "/personal-homepage/static/media/IconGithub.09abe07d9aebd72f04b4118999889c9a.svg",
     "index.html": "/personal-homepage/index.html",
     "static/media/IconGit.svg": "/personal-homepage/static/media/IconGit.a9062bf9626a38e8866f20e84ee3d71b.svg",
@@ -14,10 +15,10 @@
     "static/media/Message.svg": "/personal-homepage/static/media/Message.514461521cb8d76b55e16ac430346abb.svg",
     "static/media/IconFb.svg": "/personal-homepage/static/media/IconFb.14f43e9c25d473ecd49ceaf878f965b9.svg",
     "static/media/icon-spinner.svg": "/personal-homepage/static/media/icon-spinner.bfb3dace140cbefe361bc710e20d489c.svg",
-    "main.c9dbc6f2.js.map": "/personal-homepage/static/js/main.c9dbc6f2.js.map",
+    "main.7fdb4b35.js.map": "/personal-homepage/static/js/main.7fdb4b35.js.map",
     "787.162bc9a0.chunk.js.map": "/personal-homepage/static/js/787.162bc9a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.c9dbc6f2.js"
+    "static/js/main.7fdb4b35.js"
   ]
 }

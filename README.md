@@ -11,8 +11,8 @@ A project in which I present myself. There are my data, skills and future plans.
 ### CSS
 ### JavaScript
 ### JS Library
-#### React.js
-#### Redux
+   - React.js
+   - Redux
 
 ### `npm start`
 

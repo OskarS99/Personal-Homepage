@@ -14,11 +14,11 @@ export const Wrapper = styled.section`
 `;
 
 export const StyledIconGit = styled(IconGit)`
+  display: block;
+  margin: 0 auto;
   path {
     fill: ${(props) => props.theme.color.IconGit};
   }
-  display: block;
-  margin: 0 auto;
 `;
 
 export const Header = styled.h2`
@@ -117,6 +117,10 @@ export const LoadingDescription = styled.p`
 `;
 
 export const StyledIconSpinner = styled(Spinner)`
+  display: block;
+  margin: 0 auto;
+  margin-top: 48px;
+
   #Ellipse1 {
     stroke: ${(props) => props.theme.circle.elipse1};
   }
@@ -136,8 +140,4 @@ export const StyledIconSpinner = styled(Spinner)`
       transform: rotate(360deg);
     }
   }
-
-  display: block;
-  margin: 0 auto;
-  margin-top: 48px;
 `;

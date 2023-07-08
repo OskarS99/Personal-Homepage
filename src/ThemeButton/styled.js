@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { ReactComponent as ToggleLight } from "../SVG/ToggleLight .svg";
 
 export const Wrapper = styled.div`
   position: absolute;
@@ -31,26 +30,5 @@ export const Caption = styled.p`
 
   @media (max-width: 767px) {
     display: none;
-  }
-`;
-
-export const Toggle = styled(ToggleLight)`
-  cursor: pointer;
-  #Vector {
-    position: relative;
-  }
-
-  &:hover {
-    #slider {
-      position: absolute;
-      overflow: hidden;
-      transform-box: fill-box;
-      animation: go 0.5s forwards;
-      @keyframes go {
-        to {
-          translate: 100%;
-        }
-      }
-    }
   }
 `;

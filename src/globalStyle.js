@@ -13,5 +13,4 @@ box-sizing: inherit;
 body {
 background-color: ${(props) => props.theme.color.body};
 }
-
 `;

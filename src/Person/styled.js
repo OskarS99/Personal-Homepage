@@ -44,8 +44,6 @@ export const Caption = styled.p`
 `;
 
 export const Name = styled.h1`
-  width: 415px;
-  height: 46px;
   font-style: normal;
   font-weight: 900;
   font-size: 38px;
@@ -53,6 +51,7 @@ export const Name = styled.h1`
   letter-spacing: 0.05em;
   color: ${(props) => props.theme.color.header};
 `;
+
 export const Description = styled.p`
   font-style: normal;
   font-weight: 400;
@@ -89,8 +88,6 @@ export const Button = styled.button`
 `;
 
 export const ButtonText = styled.p`
-  width: 82px;
-  height: 25px;
   font-style: normal;
   font-weight: 400;
   font-size: 20.0584px;

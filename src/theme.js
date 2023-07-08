@@ -1,4 +1,4 @@
-export const lightTheme = {
+export const Light = {
   color: {
     body: `#FBFBFE`,
     header: `#252525`,
@@ -51,7 +51,7 @@ export const lightTheme = {
     focus: `#0366D6`,
   },
 };
-export const darkTheme = {
+export const Dark = {
   color: {
     body: `#252525`,
     header: `#FFFFFF`,

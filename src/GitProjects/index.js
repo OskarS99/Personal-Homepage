@@ -6,7 +6,6 @@ import {
   ErrorDescription,
   ErrorHeader,
   Header,
-  Link,
   LoadingDescription,
   StyledIconDanger,
   StyledIconGit,
@@ -27,7 +26,6 @@ export const GitProjects = () => {
 
       {reposData.includes("loading") ? (
         <>
-          {" "}
           <div>
             <LoadingDescription>
               Please wait, projects are being loaded...

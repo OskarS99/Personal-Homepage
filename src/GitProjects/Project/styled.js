@@ -30,8 +30,6 @@ export const Description = styled.p`
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.05em;
   color: ${(props) => props.theme.color.text};
 `;
@@ -39,6 +37,7 @@ export const Description = styled.p`
 export const LinkWrapper = styled.div`
   margin-top: 24px;
 `;
+
 export const Text = styled.p`
   font-style: normal;
   font-weight: 400;
@@ -55,8 +54,6 @@ export const Link = styled.a`
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.05em;
   color: ${(props) => props.theme.link.color};
   margin-left: 8px;

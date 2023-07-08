@@ -35,6 +35,11 @@ export const Post = styled.a`
   &:hover {
     color: ${(props) => props.theme.mail.hover};
   }
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
 `;
 
 export const Text = styled.p`

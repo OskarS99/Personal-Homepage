@@ -22,6 +22,7 @@ export const Caption = styled.p`
   color: ${(props) => props.theme.color.text};
   white-space: nowrap;
 `;
+
 export const Post = styled.a`
   font-style: normal;
   font-weight: 900;

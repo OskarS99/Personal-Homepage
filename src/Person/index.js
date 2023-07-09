@@ -4,6 +4,7 @@ import {
   ButtonLink,
   ButtonText,
   Caption,
+  ContentWrapper,
   Description,
   Name,
   Photo,
@@ -16,7 +17,7 @@ export const Person = () => (
   <Wrapper>
     <ThemeButton />
     <Photo src={require(`../oskar.jpg`)} alt="Oskar Siry" />
-    <div>
+    <ContentWrapper>
       <Caption>This is</Caption>
       <Name>Oskar Siry</Name>
       <Description>
@@ -29,6 +30,6 @@ export const Person = () => (
           <ButtonText>Hire Me</ButtonText>
         </Button>
       </ButtonLink>
-    </div>
+    </ContentWrapper>
   </Wrapper>
 );

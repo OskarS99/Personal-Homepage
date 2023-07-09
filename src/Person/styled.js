@@ -28,6 +28,9 @@ export const Photo = styled.img`
     height: 132.67px;
   }
 `;
+export const ContentWrapper = styled.div`
+  max-width: 633px;
+`;
 
 export const Caption = styled.p`
   margin-top: 64px;

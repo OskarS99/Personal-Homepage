@@ -64,12 +64,12 @@ export const Text = styled.p`
 export const Link = styled.a`
   margin-right: 24px;
   path {
-    transition: fill 1s ease-out;
+    transition: fill 0.3s;
     fill: ${(props) => props.theme.socialMedia.color};
   }
   &:focus {
     path {
-      transition: fill 1s ease-out;
+      transition: fill 0.3s;
       fill: ${(props) => props.theme.socialMedia.focus};
     }
   }

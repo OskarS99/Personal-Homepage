@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Box = styled.div`
   margin-top: 63px;
   max-width: 1215px;
+  transition: background 0.3s;
   background: ${(props) => props.theme.box.color};
   padding: 32px 32px 24px 32px;
   box-shadow: ${(props) => props.theme.box.shadow};
@@ -21,6 +22,7 @@ export const Title = styled.h2`
   font-size: 30px;
   line-height: 36px;
   letter-spacing: 0.05em;
+  transition: color 0.3s;
   color: ${(props) => props.theme.color.header};
   border-bottom: 1px solid rgba(209, 213, 218, 0.3);
   padding-bottom: 16px;
@@ -48,6 +50,7 @@ export const ListItem = styled.li`
   font-size: 18px;
   line-height: 140%;
   letter-spacing: 0.05em;
+  transition: color 0.3s;
   color: ${(props) => props.theme.color.text};
 
   &::before {

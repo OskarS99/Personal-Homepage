@@ -17,11 +17,13 @@ export const StyledIconGit = styled(IconGit)`
   display: block;
   margin: 0 auto;
   path {
+    transition: fill 0.3s;
     fill: ${(props) => props.theme.color.IconGit};
   }
 `;
 
 export const Header = styled.h2`
+  transition: color 0.3s;
   color: ${(props) => props.theme.color.header};
   font-style: normal;
   font-weight: 900;
@@ -33,6 +35,7 @@ export const Header = styled.h2`
 `;
 
 export const Text = styled.p`
+  transition: color 0.3s;
   color: ${(props) => props.theme.color.header};
   margin-top: 8px;
   font-style: normal;
@@ -55,6 +58,7 @@ export const Body = styled.div`
 
 export const StyledIconDanger = styled(Danger)`
   path {
+    transition: stroke 0.3s;
     stroke: ${(props) => props.theme.color.header};
   }
   display: block;
@@ -70,6 +74,7 @@ export const ErrorHeader = styled.h3`
   text-align: center;
   letter-spacing: 0.05em;
   margin-top: 23.16px;
+  transition: color 0.3s;
   color: ${(props) => props.theme.color.header};
 `;
 
@@ -81,6 +86,7 @@ export const ErrorDescription = styled.p`
   text-align: center;
   letter-spacing: 0.05em;
   margin: 32px auto;
+  transition: color 0.3s;
   color: ${(props) => props.theme.color.header};
 `;
 
@@ -95,6 +101,7 @@ export const Button = styled.button`
   width: 168px;
   padding: 12px 16px;
   gap: 16px;
+  transition: background 0.3s, box-shadow 0.3s;
   background: ${(props) => props.theme.button.color};
   border: 1px solid rgba(209, 213, 218, 0.1);
   border-radius: 4px;
@@ -113,6 +120,7 @@ export const LoadingDescription = styled.p`
   line-height: 140%;
   text-align: center;
   letter-spacing: 0.05em;
+  transition: color 0.3s;
   color: ${(props) => props.theme.color.header};
 `;
 
@@ -120,6 +128,7 @@ export const StyledIconSpinner = styled(Spinner)`
   display: block;
   margin: 0 auto;
   margin-top: 48px;
+  transition: stroke 0.3s;
 
   #Ellipse1 {
     stroke: ${(props) => props.theme.circle.elipse1};

@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
   margin-top: 104px;
   padding: 32px 32px 24px 32px;
   max-width: 1215px;
+  transition: background 0.3s, box-shadow 0.3s;
   background: ${(props) => props.theme.box.color};
   box-shadow: ${(props) => props.theme.box.shadow};
   border-radius: 4px;
@@ -21,6 +22,7 @@ export const Title = styled.h2`
   line-height: 36px;
   margin: 0;
   letter-spacing: 0.05em;
+  transition: color 0.3s;
   color: ${(props) => props.theme.color.header};
   padding-bottom: 18px;
   border-bottom: 1px solid rgba(209, 213, 218, 0.3);
@@ -46,6 +48,7 @@ export const ListItem = styled.li`
   font-size: 18px;
   line-height: 140%;
   letter-spacing: 0.05em;
+  transition: color 0.3s;
   color: ${(props) => props.theme.color.text};
 
   &::before {

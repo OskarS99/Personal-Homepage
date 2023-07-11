@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
   border-radius: 4px;
+  transition: background 0.3s, border 0.3s;
 
   &:hover {
     border: ${(props) => props.theme.box.hover};
@@ -21,6 +22,7 @@ export const Title = styled.h3`
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.05em;
+  transition: color 0.3s;
   color: ${(props) => props.theme.color.projectHeader};
 `;
 
@@ -31,6 +33,7 @@ export const Description = styled.p`
   font-size: 18px;
   line-height: 140%;
   letter-spacing: 0.05em;
+  transition: color 0.3s;
   color: ${(props) => props.theme.color.text};
 `;
 
@@ -46,6 +49,7 @@ export const Text = styled.p`
   display: flex;
   align-items: center;
   letter-spacing: 0.05em;
+  transition: color 0.3s;
   color: ${(props) => props.theme.color.text};
 `;
 
@@ -55,6 +59,7 @@ export const Link = styled.a`
   font-size: 18px;
   line-height: 140%;
   letter-spacing: 0.05em;
+  transition: color 0.3s;
   color: ${(props) => props.theme.link.color};
   margin-left: 8px;
 `;

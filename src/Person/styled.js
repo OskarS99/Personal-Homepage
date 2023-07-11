@@ -39,6 +39,7 @@ export const Caption = styled.p`
   font-size: 12px;
   line-height: 130%;
   text-transform: uppercase;
+  transition: color 0.3s;
   color: ${(props) => props.theme.color.text};
 
   @media (max-width: 767px) {
@@ -52,6 +53,7 @@ export const Name = styled.h1`
   font-size: 38px;
   line-height: 46px;
   letter-spacing: 0.05em;
+  transition: color 0.3s;
   color: ${(props) => props.theme.color.header};
 `;
 
@@ -61,6 +63,7 @@ export const Description = styled.p`
   font-size: 20px;
   line-height: 140%;
   letter-spacing: 0.05em;
+  transition: color 0.3s;
   color: ${(props) => props.theme.color.text};
 
   @media (max-width: 767px) {
@@ -77,6 +80,7 @@ export const Button = styled.button`
   gap: 16px;
   width: 154px;
   height: 49px;
+  transition: background 0.3s, border 0.3s, box-shadow 0.3s;
   background: ${(props) => props.theme.button.color};
   border: ${(props) => props.theme.button.border};
   border-radius: 4px;

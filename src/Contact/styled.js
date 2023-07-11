@@ -19,6 +19,7 @@ export const Caption = styled.p`
   font-size: 12px;
   line-height: 130%;
   text-transform: uppercase;
+  transition: color 0.3s;
   color: ${(props) => props.theme.color.text};
   white-space: nowrap;
 `;
@@ -29,6 +30,7 @@ export const Post = styled.a`
   font-size: 32px;
   line-height: 39px;
   letter-spacing: 0.05em;
+  transition: color 0.3s;
   color: ${(props) => props.theme.mail.color};
   text-decoration: none;
 
@@ -50,16 +52,19 @@ export const Text = styled.p`
   line-height: 140%;
   letter-spacing: 0.05em;
   margin-bottom: 56px;
+  transition: color 0.3s, fill 0.3s;
   color: ${(props) => props.theme.color.header};
 `;
 
 export const Link = styled.a`
   margin-right: 24px;
   path {
+    transition: fill 1s ease-out;
     fill: ${(props) => props.theme.socialMedia.color};
   }
   &:focus {
     path {
+      transition: fill 1s ease-out;
       fill: ${(props) => props.theme.socialMedia.focus};
     }
   }

@@ -24,6 +24,11 @@ export const Title = styled.h3`
   letter-spacing: 0.05em;
   transition: color 0.3s;
   color: ${(props) => props.theme.color.projectHeader};
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 19.36px;
+  }
 `;
 
 export const Description = styled.p`
@@ -35,6 +40,11 @@ export const Description = styled.p`
   letter-spacing: 0.05em;
   transition: color 0.3s;
   color: ${(props) => props.theme.color.text};
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 16.94px;
+  }
 `;
 
 export const LinkWrapper = styled.div`
@@ -51,6 +61,11 @@ export const Text = styled.p`
   letter-spacing: 0.05em;
   transition: color 0.3s;
   color: ${(props) => props.theme.color.text};
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 16.94px;
+  }
 `;
 
 export const Link = styled.a`
@@ -65,5 +80,10 @@ export const Link = styled.a`
 
   &:hover {
     color: ${(props) => props.theme.link.hover};
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 16.94px;
   }
 `;

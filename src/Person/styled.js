@@ -55,6 +55,11 @@ export const Name = styled.h1`
   letter-spacing: 0.05em;
   transition: color 0.3s;
   color: ${(props) => props.theme.color.header};
+
+  @media (max-width: 767px) {
+    font-size: 22px;
+    line-height: 26.63px;
+  }
 `;
 
 export const Description = styled.p`
@@ -68,6 +73,8 @@ export const Description = styled.p`
 
   @media (max-width: 767px) {
     word-break: break-word;
+    font-size: 17px;
+    line-height: 23.8px;
   }
 `;
 

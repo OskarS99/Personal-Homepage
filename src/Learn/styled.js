@@ -26,6 +26,11 @@ export const Title = styled.h2`
   color: ${(props) => props.theme.color.header};
   padding-bottom: 18px;
   border-bottom: 1px solid rgba(209, 213, 218, 0.3);
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+    line-height: 21.78px;
+  }
 `;
 
 export const List = styled.ul`
@@ -56,5 +61,10 @@ export const ListItem = styled.li`
     color: #0366d6;
     margin-right: 16px;
     font-size: 30px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 16.94px;
   }
 `;

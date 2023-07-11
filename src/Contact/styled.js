@@ -40,7 +40,7 @@ export const Post = styled.a`
 
   @media (max-width: 767px) {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 21.78px;
   }
 `;
 
@@ -54,6 +54,11 @@ export const Text = styled.p`
   margin-bottom: 56px;
   transition: color 0.3s, fill 0.3s;
   color: ${(props) => props.theme.color.header};
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 16.94px;
+  }
 `;
 
 export const Link = styled.a`

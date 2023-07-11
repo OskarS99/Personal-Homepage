@@ -32,6 +32,11 @@ export const Header = styled.h2`
   text-align: center;
   letter-spacing: 0.05em;
   margin-top: 13px;
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+    line-height: 21.78px;
+  }
 `;
 
 export const Text = styled.p`
@@ -44,6 +49,11 @@ export const Text = styled.p`
   line-height: 140%;
   letter-spacing: 0.05em;
   text-align: center;
+
+  @media (max-width: 767px) {
+    font-size: 17px;
+    line-height: 23.8px;
+  }
 `;
 
 export const Body = styled.div`

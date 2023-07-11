@@ -89,8 +89,8 @@ export const Button = styled.button`
     box-shadow: ${(props) => props.theme.button.focus};
   }
 
-  &:active {
-    box-shadow: ${(props) => props.theme.button.selected};
+  &:hover {
+    box-shadow: ${(props) => props.theme.button.hover};
   }
 `;
 

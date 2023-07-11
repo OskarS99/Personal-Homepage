@@ -62,4 +62,8 @@ export const Link = styled.a`
   transition: color 0.3s;
   color: ${(props) => props.theme.link.color};
   margin-left: 8px;
+
+  &:hover {
+    color: ${(props) => props.theme.link.hover};
+  }
 `;

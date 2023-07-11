@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
-export const useProjectData = () => {
-  const projectApi = `https://api.github.com/users/OskarS99/repos`;
+const projectApi = `https://api.github.com/users/OskarS99/repos`;
 
+export const useProjectData = () => {
   const [reposData, setReposData] = useState(["loading"]);
 
   useEffect(() => {

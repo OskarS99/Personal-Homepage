@@ -38,12 +38,13 @@ export const Light = {
     
     `,
 
-    selected: `0px 2px 0px 0px rgba(20, 70, 32, 0.2) inset
+    hover: `0px 2px 0px 0px rgba(20, 70, 32, 0.2) inset
     `,
   },
 
   link: {
     color: `#0366D6`,
+    hover: `#1257a4`,
   },
 
   socialMedia: {
@@ -91,12 +92,13 @@ export const Dark = {
    2px -2px 0px 0px rgba(109, 147, 190, 1)
     `,
 
-    selected: `0px 2px 0px 0px rgba(20, 70, 32, 0.2) inset
+    hover: `0px 2px 0px 0px rgba(20, 70, 32, 0.2) inset
     `,
   },
 
   link: {
     color: `#2188FF`,
+    hover: `#0c6cda`,
   },
 
   socialMedia: {

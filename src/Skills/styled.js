@@ -1,31 +1,31 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  margin-top: 104px;
-  padding: 32px 32px 24px 32px;
+  margin-top: 63px;
   max-width: 1215px;
-  transition: background 0.3s, box-shadow 0.3s;
+  transition: background 0.3s;
   background: ${(props) => props.theme.box.color};
+  padding: 32px 32px 24px 32px;
   box-shadow: ${(props) => props.theme.box.shadow};
   border-radius: 4px;
 
   @media (max-width: 767px) {
-    margin-top: 50px;
+    margin-top: 48px;
     margin-inline: 16px;
   }
 `;
 
 export const Title = styled.h2`
+  margin: 0;
   font-style: normal;
   font-weight: 900;
   font-size: 30px;
   line-height: 36px;
-  margin: 0;
   letter-spacing: 0.05em;
   transition: color 0.3s;
   color: ${(props) => props.theme.color.header};
-  padding-bottom: 18px;
   border-bottom: 1px solid rgba(209, 213, 218, 0.3);
+  padding-bottom: 16px;
 
   @media (max-width: 767px) {
     font-size: 18px;
@@ -36,10 +36,12 @@ export const Title = styled.h2`
 export const List = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-left: 0;
+  grid-column-gap: 115px;
+  white-space: nowrap;
+  padding: 0px;
   margin-top: 32px;
-  list-style-position: inside;
   list-style: none;
+  list-style-position: inside;
 
   @media (max-width: 767px) {
     grid-template-columns: 1fr;

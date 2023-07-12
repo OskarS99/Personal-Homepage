@@ -1,8 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-import { Button, Caption, Wrapper } from "./styled";
+import { Button, Caption, LightThemeButton, Wrapper } from "./styled";
 import { selectTheme, toggleTheme } from "../themeSlice";
-import { ReactComponent as LightThemeButton } from "../SVG/LightButton.svg";
-import { ReactComponent as DarkThemeButton } from "../SVG/DarkButton.svg";
 
 export const ThemeButton = () => {
   const dark = useSelector(selectTheme);
@@ -13,7 +11,7 @@ export const ThemeButton = () => {
         Dark mode <span>{dark ? "on" : "off"}</span>
       </Caption>
       <Button onClick={() => dispatch(toggleTheme())}>
-        {dark ? <DarkThemeButton /> : <LightThemeButton />}
+        <LightThemeButton move={dark} />
       </Button>
     </Wrapper>
   );

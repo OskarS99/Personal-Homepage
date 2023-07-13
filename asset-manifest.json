@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.js": "/Personal-Homepage/static/js/main.8a3205c5.js",
+    "main.js": "/Personal-Homepage/static/js/main.b2324698.js",
     "static/js/787.162bc9a0.chunk.js": "/Personal-Homepage/static/js/787.162bc9a0.chunk.js",
     "static/media/oskar.jpg": "/Personal-Homepage/static/media/oskar.d92f50c41aea283dd1e4.jpg",
-    "static/media/DarkButton.svg": "/Personal-Homepage/static/media/DarkButton.9e2db4d43beb9e831019eb690919df2f.svg",
-    "static/media/LightButton.svg": "/Personal-Homepage/static/media/LightButton.471109add07aa2687adcdbd0ed63c71e.svg",
+    "static/media/LightButton.svg": "/Personal-Homepage/static/media/LightButton.1278639412672b5fcc767913d83e8e00.svg",
     "static/media/IconIG.svg": "/Personal-Homepage/static/media/IconIG.ac575dc2f80befa7ba993f0a04ba6dda.svg",
     "static/media/IconGithub.svg": "/Personal-Homepage/static/media/IconGithub.09abe07d9aebd72f04b4118999889c9a.svg",
     "index.html": "/Personal-Homepage/index.html",
@@ -14,10 +13,10 @@
     "static/media/Message.svg": "/Personal-Homepage/static/media/Message.514461521cb8d76b55e16ac430346abb.svg",
     "static/media/IconFb.svg": "/Personal-Homepage/static/media/IconFb.14f43e9c25d473ecd49ceaf878f965b9.svg",
     "static/media/icon-spinner.svg": "/Personal-Homepage/static/media/icon-spinner.bfb3dace140cbefe361bc710e20d489c.svg",
-    "main.8a3205c5.js.map": "/Personal-Homepage/static/js/main.8a3205c5.js.map",
+    "main.b2324698.js.map": "/Personal-Homepage/static/js/main.b2324698.js.map",
     "787.162bc9a0.chunk.js.map": "/Personal-Homepage/static/js/787.162bc9a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.8a3205c5.js"
+    "static/js/main.b2324698.js"
   ]
 }

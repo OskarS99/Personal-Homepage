@@ -36,8 +36,32 @@ export const Caption = styled.p`
 `;
 
 export const LightThemeButton = styled(Light)`
+  #bg {
+    path {
+      fill: ${(props) => props.theme.themeButton.background};
+      stroke: ${(props) => props.theme.themeButton.stroke};
+      ${({ move }) =>
+        move &&
+        css`
+          filter: drop-shadow(
+            0px 16px 58px 0px rgba(9, 10, 51, 0.03),
+            0px -2px 50px 0px rgba(9, 10, 51, 0.02)
+          );
+        `}
+    }
+  }
+
+  #toggle {
+    fill: ${(props) => props.theme.themeButton.toggle};
+  }
+
+  #sun {
+    path {
+      fill: ${(props) => props.theme.themeButton.sun};
+    }
+  }
+
   #slider {
-    position: absolute;
     ${({ move }) =>
       move
         ? css`

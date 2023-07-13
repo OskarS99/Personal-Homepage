@@ -5,15 +5,15 @@ import { GitProjects } from "./GitProjects";
 import { Contact } from "./Contact";
 import { ThemeProvider } from "styled-components";
 import { Person } from "./Person";
-import { selectTheme } from "./themeSlice";
 import { darkTheme, lightTheme } from "./theme";
 import { useSelector } from "react-redux";
 import { learn, skills } from "./Skills/skillsList";
 import { Skills } from "./Skills";
 import { Main } from "./Main";
+import { selectIsDarkTheme } from "./Common/themeSlice";
 
 const App = () => {
-  const dark = useSelector(selectTheme);
+  const isDarkTheme = useSelector(selectIsDarkTheme);
 
   return (
     <ThemeProvider theme={dark ? darkTheme : lightTheme}>

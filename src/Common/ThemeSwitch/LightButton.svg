@@ -1,11 +1,11 @@
 <svg width="48" height="26" viewBox="0 0 48 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="ToggleOff-light" clip-path="url(#clip0_16382_205)">
 <g id="bg">
-<path id="Vector" d="M13.1765 0.5H34.8235C41.8309 0.5 47.5 6.10278 47.5 13C47.5 19.8972 41.8309 25.5 34.8235 25.5H13.1765C6.16907 25.5 0.5 19.8972 0.5 13C0.5 6.10278 6.16907 0.5 13.1765 0.5Z" fill="white" stroke="#6E7E91"/>
+<path id="Vector" d="M13.1765 0.5H34.8235C41.8309 0.5 47.5 6.10278 47.5 13C47.5 19.8972 41.8309 25.5 34.8235 25.5H13.1765C6.16907 25.5 0.5 19.8972 0.5 13C0.5 6.10278 6.16907 0.5 13.1765 0.5Z" fill="currentColor" stroke="currentColor"/>
 
 </g>
 <g id="slider">
-<path id="toggle" d="M13 23C18.5228 23 23 18.5228 23 13C23 7.47715 18.5228 3 13 3C7.47715 3 3 7.47715 3 13C3 18.5228 7.47715 23 13 23Z" fill="#6E7E91"/>
+<path id="toggle" d="M13 23C18.5228 23 23 18.5228 23 13C23 7.47715 18.5228 3 13 3C7.47715 3 3 7.47715 3 13C3 18.5228 7.47715 23 13 23Z" fill="currentColor"/>
 <g id="brightness 1" fill="#ff0000" clip-path="url(#clip1_16382_205)">
 <g id="Group">
 <g id="Group_2">

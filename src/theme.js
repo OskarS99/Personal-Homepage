@@ -1,4 +1,11 @@
 export const lightTheme = {
+  themeButton: {
+    background: `#D1D5DA4D`,
+    stroke: `#6E7E91`,
+    toggle: `#6E7E91`,
+    sun: `#FFFFFF`,
+  },
+
   color: {
     body: `#FBFBFE`,
     header: `#252525`,
@@ -53,6 +60,13 @@ export const lightTheme = {
   },
 };
 export const darkTheme = {
+  themeButton: {
+    background: `rgba(54, 54, 54, 0.72)`,
+    stroke: `#FFFFFF`,
+    toggle: `#FFFFFF`,
+    sun: `#252525`,
+  },
+
   color: {
     body: `#252525`,
     header: `#FFFFFF`,

@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as Light } from "../SVG/LightButton.svg";
+import { ReactComponent as Light } from "../ThemeSwitch/LightButton.svg";
 import { Keyframes } from "styled-components";
 
 export const Wrapper = styled.div`
@@ -35,7 +35,7 @@ export const Caption = styled.p`
   }
 `;
 
-export const LightThemeButton = styled(Light)`
+export const ThemeButton = styled(Light)`
   #bg {
     path {
       fill: ${(props) => props.theme.themeButton.background};

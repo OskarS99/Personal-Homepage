@@ -1,18 +1,23 @@
 import styled from "styled-components";
+import { ReactComponent as IconGitHub } from "./Icons/IconGithub.svg";
+import { ReactComponent as IconFb } from "./Icons/IconFb.svg";
+import { ReactComponent as IconLinkedIN } from "./Icons/IconLinkedIN.svg";
+import { ReactComponent as IconIg } from "./Icons/IconIG.svg";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.footer`
   margin-top: 120px;
   max-width: 691px;
   margin-bottom: 120px;
 
   @media (max-width: 767px) {
     margin-top: 48px;
+    margin-bottom: 32px;
     margin-inline: 16px;
     margin-bottom: 31px;
   }
 `;
 
-export const Caption = styled.p`
+export const Caption = styled.h2`
   margin-bottom: 24px;
   font-style: normal;
   font-weight: 700;
@@ -23,8 +28,10 @@ export const Caption = styled.p`
   color: ${(props) => props.theme.color.text};
   white-space: nowrap;
 `;
-
-export const Post = styled.a`
+export const Address = styled.address`
+  font-style: unset;
+`;
+export const Email = styled.a`
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
@@ -67,10 +74,38 @@ export const Link = styled.a`
     transition: fill 0.3s;
     fill: ${(props) => props.theme.socialMedia.color};
   }
-  &:focus {
+  &:hover {
     path {
       transition: fill 0.3s;
       fill: ${(props) => props.theme.socialMedia.focus};
     }
+  }
+`;
+
+export const StyledIconGithub = styled(IconGitHub)`
+  @media (max-width: 767px) {
+    height: auto;
+    width: 32px;
+  }
+`;
+
+export const StyledIconFb = styled(IconFb)`
+  @media (max-width: 767px) {
+    height: auto;
+    width: 32px;
+  }
+`;
+
+export const StyledIconLinkedIN = styled(IconLinkedIN)`
+  @media (max-width: 767px) {
+    height: auto;
+    width: 32px;
+  }
+`;
+
+export const StyledIconIg = styled(IconIg)`
+  @media (max-width: 767px) {
+    height: auto;
+    width: 32px;
   }
 `;

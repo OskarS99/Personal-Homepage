@@ -1,26 +1,28 @@
 import styled, { css } from "styled-components";
 import { ReactComponent as Light } from "../ThemeSwitch/LightButton.svg";
-import { Keyframes } from "styled-components";
 
 export const Wrapper = styled.div`
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 26px;
+  margin-top: 119px;
+  display: flex;
+  justify-content: flex-end;
+  @media (max-width: 767px) {
+    margin-top: 22px;
+    margin-right: 16px;
+  }
+`;
+
+export const Button = styled.button`
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 12px;
-`;
-
-export const Button = styled.button`
   border: none;
   background: none;
   padding: 0px;
 `;
 
-export const Caption = styled.p`
+export const Text = styled.span`
   width: 99px;
   color: #6e7e91;
   height: 16px;
